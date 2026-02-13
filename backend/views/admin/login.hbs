@@ -1,0 +1,17 @@
+<div class="holder login">
+  <h2>Iniciar sesión</h2>
+
+  {{#if error}}
+    <p style="color:red; font-weight:bold;">Usuario o contraseña incorrectos</p>
+  {{/if}}
+
+  <form method="post" action="/login">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" value="romeocute@gmail.com" required>
+
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" id="password" required>
+
+    <button type="submit">Ingresar</button>
+  </form>
+</div>

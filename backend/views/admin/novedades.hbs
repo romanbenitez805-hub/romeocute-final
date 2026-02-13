@@ -1,0 +1,9 @@
+<h2>Bienvenido {{email}}</h2>
+
+{{#if (eq rol "admin")}}
+  <button>Agregar</button>
+  <button>Editar</button>
+  <button>Eliminar</button>
+{{else}}
+  <p>Solo lectura, no tenés permisos para modificar.</p>
+{{/if}}
